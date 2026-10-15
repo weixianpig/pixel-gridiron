@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 1280 800" preserveAspectRatio="none">
+  <title>Retro Bowl - SVG launcher</title>
+  <desc>Experimental interactive SVG entry linking to a separately hosted game. If the embedded frame does not load, click Open Game.</desc>
+  <rect width="1280" height="800" fill="#0b1423"/>
+  <rect width="1280" height="70" fill="#17263c"/>
+  <text x="28" y="43" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#ffffff">🏈 Retro Bowl</text>
+  <foreignObject x="0" y="70" width="1280" height="675">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;margin:0;padding:0;overflow:hidden;background:#060c13">
+      <iframe src="https://weixianpig.github.io/pixel-gridiron/rb/index.html" title="Retro Bowl game" loading="eager" style="display:block;width:100%;height:100%;border:0;background:#050505"></iframe>
+    </div>
+  </foreignObject>
+  <rect x="0" y="745" width="1280" height="55" fill="#17263c"/>
+  <text x="28" y="780" fill="#a9bed1" font-family="Arial, sans-serif" font-size="17">Experimental SVG embed. If blank or blocked, use the game link.</text>
+  <a href="https://weixianpig.github.io/pixel-gridiron/rb/index.html" target="_blank">
+    <rect x="1025" y="7" width="225" height="55" rx="11" fill="#f1c569"/>
+    <text x="1137" y="42" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#111b2b" text-anchor="middle">OPEN GAME ↗</text>
+  </a>
+</svg>
