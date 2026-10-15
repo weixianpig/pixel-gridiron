@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+<title>Standalone SVG Compatibility Check</title>
+<rect width="960" height="540" fill="#142238"/>
+<text x="480" y="95" fill="#fff" font-family="Arial,sans-serif" font-weight="bold" font-size="33" text-anchor="middle">Standalone SVG Test</text>
+<text x="480" y="154" fill="#d0e5f7" font-family="Arial,sans-serif" font-size="19" text-anchor="middle">No iframe, game files, external requests or third-party resources</text>
+<text id="result" x="480" y="240" fill="#9ee1ad" font-family="Arial,sans-serif" font-size="27" text-anchor="middle">SVG render: PASS | JavaScript: not tested</text>
+<g id="testButton" tabindex="0" style="cursor:pointer">
+<rect x="325" y="296" width="310" height="86" rx="13" fill="#ffd36b"/>
+<text x="480" y="348" fill="#1c2b3a" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="bold">CLICK TO TEST JS</text>
+</g>
+<text x="480" y="443" fill="#bad0e3" font-size="18" font-family="Arial,sans-serif" text-anchor="middle">If the button does not change the text, JavaScript is restricted here.</text>
+<script><![CDATA[
+(function(){
+  var button=document.getElementById("testButton");
+  var result=document.getElementById("result");
+  var clicks=0;
+  function update(){clicks++;result.textContent="SVG render: PASS | JavaScript: PASS ("+clicks+")";}
+  button.addEventListener("click",update);
+  button.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();update();}});
+})();
+]]></script>
+</svg>
